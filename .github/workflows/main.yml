@@ -23,7 +23,7 @@ jobs:
     env:
       ARM_SUBSCRIPTION_ID: '18877d87-c4d6-429e-abbb-bfe78da42dfd'
       ARM_CLIENT_ID: '0470a4c9-b790-4af3-8ee1-0a7aefeadd04'
-      ARM_TENNANT_ID: '646fb7f7-62ce-4a43-81ec-7cedd8da2756'
+      ARM_TENANT_ID: '646fb7f7-62ce-4a43-81ec-7cedd8da2756'
       ARM_CLIENT_SECRET: ${{ secrets.ARM_CLIENT_SECRET }}
       AZURE_STORAGE: 'acmeterraformtest42'
 
