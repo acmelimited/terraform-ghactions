@@ -51,7 +51,7 @@ jobs:
         run: terraform plan -out=tfplan
         
       - name: Terraform apply
-        run: terrraform apply tfplan
+        run: terraform apply tfplan
       
       
   
