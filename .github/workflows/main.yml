@@ -39,10 +39,10 @@ jobs:
           creds: ${{ secrets.AZURE_SECRETS }}
           
       - name: HashiCorp - Setup Terraform
-        uses: hashicorp/setup-terraform@v1.2.1.sh 
+        uses: hashicorp/setup-terraform@v1.2.1
 
       - name: Run a one-line script
-        run: chmod +x ./tfstate.sh && ./tfstate ${{ env.AZURE_STORAGE }}
+        run: chmod +x ./tfstate.sh && ./tfstate.sh ${{ env.AZURE_STORAGE }}
         
       - name: Terrraform init
         run: terraform init -backend-config="storage_account_name=${{env.AZURE_STORAGE}}"
